@@ -11,42 +11,42 @@
 
 
 
-// const counterValue = 0;
+const counterValue = 0;
 
-// const CounterPlugin = function ({ rootSelector, counterValue = 0, step = 1 } = {}) {
-//     this.rootSelector = rootSelector;
-//     this.value = counterValue;
-//     this.step = step;
+const CounterPlugin = function ({ rootSelector, counterValue = 0, step = 1 } = {}) {
+    this.rootSelector = rootSelector;
+    this.value = counterValue;
+    this.step = step;
 
-//     this.EventsBtn();
-// };
+    this.EventsBtn();
+};
 
-// const decrementBtn = document.querySelector('[data-action="decrement"]');
-// const valueText = document.querySelector('#value');
-// const incrementBtn = document.querySelector('[data-action="increment"]');
+const decrementBtn = document.querySelector('[data-action="decrement"]');
+const valueText = document.querySelector('#value');
+const incrementBtn = document.querySelector('[data-action="increment"]');
 
-// CounterPlugin.prototype.EventsBtn = function () {
-//     incrementBtn.addEventListener('click', () => {
-//         this.increment();
-//         this.updateValue();
-//     });
+CounterPlugin.prototype.EventsBtn = function () {
+    incrementBtn.addEventListener('click', () => {
+        this.increment();
+        this.updateValue();
+    });
 
-//     decrementBtn.addEventListener('click', () => {
-//         this.decrement();
-//         this.updateValue();
-//     });
-// };
+    decrementBtn.addEventListener('click', () => {
+        this.decrement();
+        this.updateValue();
+    });
+};
 
-// CounterPlugin.prototype.increment = function() {
-//     this.value += this.step;
-// };
+CounterPlugin.prototype.increment = function() {
+    this.value += this.step;
+};
 
-// CounterPlugin.prototype.decrement = function() {
-//     this.value -= this.step;
-// };
+CounterPlugin.prototype.decrement = function() {
+    this.value -= this.step;
+};
 
-// CounterPlugin.prototype.updateValue = function () {
-//     valueText.textContent = this.value;
-// };
+CounterPlugin.prototype.updateValue = function () {
+    valueText.textContent = this.value;
+};
 
-// new CounterPlugin({ rootSelector: counter, step: 1 });
+new CounterPlugin({ rootSelector: counter, step: 1 });

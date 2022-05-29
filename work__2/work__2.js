@@ -19,17 +19,17 @@ const ingredients = [
 
 
 
-// const list = document.querySelector('#ingredients');
+const list = document.querySelector('#ingredients');
 
-// const itemIngredients = ingredients.map(el => {
-//     const ingItem = document.createElement('li');
-//     ingItem.classList.add('item');
-//     ingItem.textContent = el;
+const itemIngredients = ingredients.map(el => {
+    const ingItem = document.createElement('li');
+    ingItem.classList.add('item');
+    ingItem.textContent = el;
 
-//     return ingItem;
-// });
+    return ingItem;
+});
 
-// console.log(itemIngredients);
+console.log(itemIngredients);
 
-// list.append(...itemIngredients);
+list.append(...itemIngredients);
 

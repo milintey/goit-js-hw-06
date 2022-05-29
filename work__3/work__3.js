@@ -28,9 +28,9 @@ const images = [
 
 
 
-// const item = document.querySelector('.gallery');
+const item = document.querySelector('.gallery');
 
-// const CreateItem = images.map(({ url, alt }) => `<li class='list__item'>
-// <img src='${url}' alt='${alt}' width='320'></li>`).join("");
+const CreateItem = images.map(({ url, alt }) => `<li class='list__item'>
+<img src='${url}' alt='${alt}' width='320'></li>`).join("");
 
-// item.insertAdjacentHTML("beforeend", CreateItem);
+item.insertAdjacentHTML("beforeend", CreateItem);
