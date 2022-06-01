@@ -11,13 +11,14 @@
 const inputEl = document.querySelector('#validation-input');
 const dataLength = document.querySelector('input[data-length]');
 const inputLength = dataLength.dataset.length;
+const inputLengthNumber = Number(inputLength);
 
 inputEl.addEventListener('blur', event => {
-    if (event.currentTarget.value.length >= inputLength) {
-        inputEl.classList.remove('invalid');
+    if (event.currentTarget.value.length === inputLengthNumber) {
         inputEl.classList.add('valid');
+        inputEl.classList.remove('invalid');
     } else {
-        inputEl.classList.remove('valid');
         inputEl.classList.add('invalid');
+        inputEl.classList.remove('valid');
     }
 });
